@@ -1,0 +1,1211 @@
+/* nieded css */ 
+
+img{
+    max-width: 100%;
+}
+
+ul li{
+    letter-spacing: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body,h1,h2,h3,h4,h5,h6,a, strong{
+    font-family: 'Rubik', sans-serif;
+}
+
+body,p,span{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* costom css */
+
+.costom-width .container-fluid, .container-fluid{
+    max-width: 1400px;
+    
+}
+/* NAV MANU STYLE */
+ul.menu {
+    margin-right: 16px;
+}
+ul.menu li {
+    display: inline-block;
+}
+ul.menu li a {
+    display: inline-block;
+    padding: 20px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    transition:all .4s;
+}
+
+ul.menu li a:hover{
+    color: #e83b3e;
+} 
+
+ul.menu li a span {
+    font-size: 10px;
+}
+
+ul.menu li:nth-child(1)
+a{
+    color: #e83b3e;
+}
+/* END NAV MANU STYLE */
+
+/* DROP SOWN MENU */
+
+ul.menu li{
+    position: relative;
+}
+
+ul.menu li ul {
+    position: absolute;
+    top: 130%;
+    left: 0;
+    width: 250px;
+    background: #fff;
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+    padding-left: 0;
+     
+    opacity: 0;
+    visibility: hidden;
+    transition:all .5s ease-in-out;
+}
+
+ul.menu li ul li{
+    display: block;
+    
+}
+
+ul.menu li ul li:nth-child(2) a{
+    color: #e83b3e !important;
+}
+ul.menu li ul li:nth-child(2) a{
+    color: black!important;
+}
+ul.menu li ul li a {
+    color: #000 !important;
+    display: block;
+    padding: 10px 28px;
+    transition: all .4s;
+}
+
+ul.menu li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+
+}
+
+ul.menu li ul li a:hover{
+    letter-spacing: 1px;
+    color: #e83b3e !important;
+}
+/* END DROP DOWN MENU */
+
+/* ------ 3rd drop down */
+
+ul.menu li ul li{
+    position: relative;
+    
+}
+ul.menu li ul li ul{
+    position: absolute;
+    top: 0% !important;
+    left: -100%;
+    width: 250px;
+    background: #fff;
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+    padding-left: 0;
+     
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition:all .5s ease-in-out;
+}
+ul.menu li ul li ul li{
+    display: block;
+}
+ul.menu li ul li ul li a{
+    display: block;
+}
+ul.menu li ul li:nth-child(8) span {
+    margin-left: 111px;
+}
+
+ul.menu li ul li:hover ul{
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* ------ 3rd drop down */
+
+/* HEADER-CONTENT STYLE */
+.header-content {
+    align-items: center;
+}
+.header-search {
+    width: 33px;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #ddd;
+    margin-right: 13px;
+}
+.header-search span {
+    display: inline-block;
+    font-size: 21px;
+}
+.header-search span i{}
+
+.phone-call{
+    display: flex;
+}
+.phone-call .call-icon {
+    font-size: 34px;
+    transform: rotate(319deg);
+    color: #e83b3ea6;
+    margin-right: 15px;
+}
+
+.call {
+    width: 147px;
+}
+.call span {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+}
+.call a {
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/***** ANIMETED JS BUTTON ******/
+.header-button {
+    margin-left: 14px;
+    margin-top: 7px;
+}
+.btn-finix {
+    position: relative;
+    padding: 10px 40px;
+    display: inline-block;
+    background: #e73c3e;
+    color: #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-finix:hover {
+    color: #fff;
+
+}
+
+.btn-finix span {
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0px;
+    transform: translate(-50%,-50%);
+    border-radius: 4px;
+    background: #111111;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    z-index: -1;
+
+}
+
+.btn-finix:hover span {
+    width:1000px;
+    height: 350px;
+    
+}
+
+
+/* END HEADER-CONTENT STYLE */
+
+/* ---------- START BANNER CSS -------------- */
+.banner {
+    background: url(./img/main-banner2.jpg) no-repeat top center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
+.banner-content {
+    width: 700px;
+}
+.banner-content h4 {
+    font-size: 18px;
+    color: rgb(231, 60, 62);
+    font-weight: 400;
+    margin-bottom: 19px;
+}
+.banner-content h2 {
+    font-size: 68px;
+    font-weight: 500;
+    color: rgb(17, 17, 17);
+}
+.banner-content p {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(96, 96, 96);
+}
+
+.banner-button{
+    margin-top: 40px;
+}
+
+/* SOCIAL LINK */
+
+
+.banner-social-link{
+    position: relative;
+}
+.banner-social-link ul {
+    position: absolute;
+    top: 192px !important;
+    left: -31px;
+    color: #000;
+    list-style: none;
+}
+.banner-social-link ul li {
+    margin-right: 32px;
+}
+.banner-social-link ul li a {
+    color: #246efd;
+    transition: .3s;
+    font-size: 18px;
+}
+.banner-social-link ul li .das{
+    position: relative;
+}
+.banner-social-link ul li .das::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: -24px;
+    width: 33px;
+    height: 1px;
+    background: #000;
+}
+
+.banner-social-link ul li a:hover{
+    color: #e83b3e;
+}
+
+/* ---------- END BANNER CSS -------------- */
+
+
+
+/* ---------- STAER SSLIDER SECTION CSS -------------- */
+.slider{
+    padding:100px 0;
+    border-bottom: 1px solid #ddd;
+}
+.slider-content{}
+
+/* ---------- END SSLIDER SECTION CSS -------------- */
+
+
+
+/* ---------- STRAT ABOUT CONTENT SECTION CSS -------------- */
+.about{
+    padding: 90px 0;
+}
+.about-left{
+    position: relative;
+}
+
+.about-left-photo{
+  position: relative;
+}
+
+.about-left-photo img{}
+
+.about-left-text {
+    position: absolute;
+    color: #000;
+    bottom: 0;
+    right: 68px;
+    background: url(./img/shape.png) no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.about-left-text h2 {
+    font-size: 65px;
+    color: #e73c3e;
+}
+.about-left-text p{}
+
+/*About  Right side  */
+.about-right-content{}
+
+.about-right-text{}
+.about-right-text h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(231, 60, 62);
+    margin-bottom: 24px;
+}
+.about-right-text h2 {
+    font-size: 38px;
+    color: rgb(17, 17, 17);
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.about-right-text p {
+    font-size: 16px;
+    color: rgb(96, 96, 96);
+    font-weight: 400;
+}
+.about-right-text strong {
+    font-size: 18px;
+    color: rgb(96, 96, 96);
+    font-weight: 400;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.about-list{}
+.about-list ul {
+    padding-left: 0;
+}
+.about-list ul li {
+    font-size: 16px;
+    font-weight: 400;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 12px;
+}
+.about-list ul li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    margin-right: 10px;
+    font-size: 21px;
+    color: #e73c3e;
+}
+
+
+/* ---------- END ABOUT CONTENT SECTION CSS ------------------------ */
+
+
+/* --- START CHOSSE SECTION SECTION CSS ------------ */
+.choose-us{
+    padding: 100px 0;
+    background: #f9fafb;
+}
+.choose-left{
+    position: relative;
+}
+.chose-tittle{}
+.chose-tittle h5 {
+    font-size: 16px;
+    color: rgb(231, 60, 62);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.chose-tittle h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: rgb(17, 17, 17);
+}
+.chose-tittle p {
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: rgb(96, 96, 96);
+    font-weight: 400;
+    line-height: 28.8px;
+}
+.choose-left-img{}
+.choose-left-img img{}
+.animate-buuton {
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10%;
+    right: 38%;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    font-size: 45px;
+    text-align: center;
+    line-height: 80px;
+    transition: .5s;
+}
+.animate-buuton::after {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 80px;
+    height: 80px;
+    background: #e83b3e;
+    font-size: 45px;
+    text-align: center;
+    line-height: 80px;
+    transition: .5s;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+
+    animation: maruf 1s ease-in-out infinite;
+}
+
+@keyframes maruf{
+    0%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    30%{
+        transform: scale(1.2);
+        opacity: .8;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: .5;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+
+.animate-buuton:hover{
+    background: #e73c3e;
+    cursor: pointer;
+    
+}
+.animate-buuton:hover i{
+    color: #fff;
+    
+    
+}
+
+.animate-buuton a{
+    display: inline-block;
+}
+.animate-buuton a span i {
+    color: #e73c3e;
+}
+
+/* chose right part  */
+.choose-right{}
+.choose-item {
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 27px;
+    transition: .3s;
+}
+.choose-item:hover{
+    transform: translateY(-15px);
+}
+.choose-item:hover .ch-icon{
+    background: #e73c3e;
+    color: #fff;
+}
+.choose-item:hover i{
+    
+    color: #fff !important;
+}
+
+.choose-item::before {
+    content: "";
+    position: absolute;
+    top: -65%;
+    left: 0px;
+    width: 97%;
+    height: 92%;
+    background: #fdebeb;
+    border-radius: 50%;
+}
+
+.ch-icon {
+    width: 85px;
+    height: 85px;
+    background: #fff;
+    line-height: 80px;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 31px;
+    font-size: 30px;
+    margin-top: 4px;
+    position: relative;
+    transition: .5s;
+}
+.mtop{
+    margin-top: -20px;
+}
+.ch-icon span{}
+.ch-icon span i {
+    color: #e73c3e;
+    transition: .5s;
+}
+.choose-item-tittle{}
+.choose-item-tittle h3 {
+    font-size: 25px;
+    color: rgb(17, 17, 17);
+    font-weight: 500;
+    margin-bottom: 21px;
+}
+.choose-item-tittle p {
+    line-height: 28.8px;
+    font-weight: 400;
+    color: rgb(96, 96, 96);
+}
+
+/* ---------- END CHOSSE SECTION SECTION CSS ---------- */
+
+
+/* ----------     START APPLY SECTION CSS ---------- */
+.apply-loan{
+    background: #fff;
+    padding: 100px 0;
+}
+.apply-tittle-content{
+    text-align: center;
+}
+.apply-tittle-content h5 {
+    font-size: 16px;
+    color: rgb(231, 60, 62);
+    font-weight: 400;
+    text-align: center;
+}
+.apply-tittle-content h2 {
+    color: rgb(17, 17, 17);
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.apply-tittle-content p {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(96, 96, 96);
+    width: 525px;
+    margin: auto;
+    line-height: 30px;
+}
+
+.apply-content-left{}
+.apply-items{}
+.apply-items h2 {
+    margin-top: 96px;
+    margin-bottom: 28px;
+    font-weight: 400;
+    color: #111;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+.apply-items ul {
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+    margin-left: 45px;
+}
+.apply-items ul::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 1px;
+    height: calc(100% - 70px);
+    background: #e73c3e;
+}
+
+
+.apply-items ul li {
+    margin-top: 29px;
+     position: relative;
+}
+.apply-items ul li::before {
+    content: attr(data-call);
+    position: absolute;
+    top: 0;
+    left: -49px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #e73c3e;
+    background: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+
+.apply-items ul li strong {
+    color: #111;
+    letter-spacing: .5px;
+    font-weight: 500;
+    font-size: 24px;
+}
+.apply-items ul li p {
+    margin-top: 8px;
+    color: #606060;
+    line-height: 29px;
+}
+.apply-items a{
+    margin-top: 30px;
+}
+
+.apply-content-right {
+    margin-top: 65px;
+    background: #fdebeb;
+    padding: 56px;
+}
+
+.apply-right-header{}
+.apply-right-header h5 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+    color: #606060;
+    margin-bottom: 11px;
+}
+.apply-right-header h2 {
+    text-align: center;
+    color: #111;
+    margin-bottom: 28px;
+    font-size: 33px;
+}
+
+.right-from form{}
+.right-from form input {
+    padding: 13px 15px;
+    
+}
+.right-from form input:focus{
+    outline: none;
+    border: none;
+    
+}
+.right-from form select{
+    padding: 13px 15px;
+}
+.right-from form label {
+    margin-top: 20px;
+}
+
+
+
+
+
+/* ----------     START APPLY SECTION CSS ---------- */
+
+/* ----------     START  CALL SECTION CSS ---------- */
+.call-c{
+   
+    background: #ffffff;
+}
+
+.call-c-content {
+    background: #e73c3e;
+    color: #fff;
+    padding: 30px 42px;
+    border-radius: 6px;
+}
+.call-c-left {
+    padding: 34px;
+}
+.call-c-left h2 {
+    font-size: 36px;
+    border-right: 1px solid #cacacaab;
+    font-weight: 400;
+    margin-right: -73px;
+}
+
+.call-c-right {
+    font-size: 32px;
+    margin-top: 48px;
+    margin-left: 58px;
+}
+.call-c-right span {
+    margin-right: 16px;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    color: #e73c3e;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 50%;
+    transform: rotate(329deg);
+}
+.call-c-right span i{}
+.call-c-right a {
+    color: #fff;
+    font-size: 33px;
+    font-weight: 500;
+}
+
+/* ----------     START  CALL SECTION CSS ---------- */
+
+
+/* ----------     START company values SECTION CSS ---------- */
+.company-values{}
+.company-value-tittle {
+    padding-top: 100px;
+    
+}
+.company-value-tittle h2 {
+    margin-bottom: 44px;
+    font-size: 36px;
+}
+
+.company-value-items {
+    padding-bottom: 100px;
+}
+.company-value-items ul {
+    padding: 0;
+    margin-left: 64px;
+}
+
+
+.company-value-items li{
+    list-style: none;
+}
+.company-value-items li .values-icon {
+    position: relative;
+}
+.company-value-items li .values-icon span {
+    font-size: 38px;
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: -65px;
+    color: #e73c3cad;
+}
+.company-value-items li .values-text{}
+.company-value-items li h3 {
+    font-size: 25px;
+    color: rgb(17, 17, 17);
+    font-weight: 500;
+}
+.company-value-items li p {
+    line-height: 31px;
+    margin-bottom: 24px;
+    color: #606060;
+}
+
+.company-img {
+    padding-top: 142px;
+    text-align: center;
+}
+.company-img img{}
+
+
+/* ----------     End company values SECTION CSS ---------- */
+
+
+/* ----------       START SERVICES SECTION CSS ---------- */
+.services{
+    padding: 100px 0;
+    background: #f9fafb;
+    
+}
+
+.services-tittle{
+    text-align: center;
+}
+.services-tittle h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(231, 60, 62);
+}
+.services-tittle h2 {
+    font-size: 36px;
+    color: rgb(17, 17, 17);
+    font-weight: 500;
+    margin: 18px 0;
+}
+.services-tittle p {
+    width: 50%;
+    margin: auto;
+    line-height: 30px;
+    color: #606060;
+}
+/* ----------       END SERVICES SECTION CSS ---------- */
+
+.icon-part{
+    
+}
+.services span {
+    font-size: 35px;
+    color: rgb(96, 96, 96);
+    font-weight: 500;
+}
+.services span i {
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 90px;
+}
+
+.services strong {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.services ul {
+    margin: auto !important;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+}
+.services ul li {
+   
+transition: .4s;
+}
+
+.services ul li button {
+    border: none !important;
+    background: none !important;
+    /* margin-right: 21px; */
+}
+
+
+/* .services ul li:hover span{
+    color: #e73c3e;
+    transition: .4s;
+} */
+
+.tab-main-section li .active span{ 
+    color: #e73c3e;
+}
+.tab-main-section li .active{
+    position: relative;
+}
+
+.tab-main-section li .active::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background:#e73c3e;
+
+}
+
+.tab-main-section{
+    border-bottom: 1px solid #ddd;
+}
+.services-img {
+    padding: 100px 0;
+}
+.services-right-text {
+    padding: 100px 10px;
+}
+
+.services-right-text h2 {
+    font-size: 25px;
+    color: rgb(17, 17, 17);
+    font-weight: 500;
+}
+.services-right-text p {
+    font-size: 16px;
+    line-height: 28.8px;
+    font-weight: 400;
+    color: rgb(96, 96, 96);
+    
+}
+.services-right-text ul{}
+
+.services-right-text ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.services-right-text ul li::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 6px;
+    left: -25px;
+    background: #e73c3e;
+}
+
+/* ----------       END SERVICES SECTION CSS ---------- */
+
+/* ----------   START CLIENTS SECTION CSS ---------- */
+.clients{
+    padding: 100px 0;
+}
+
+.clients-tittle{}
+.clients-tittle h6 {
+    font-weight: 400;
+    color: rgb(231, 60, 62);
+}
+.clients-tittle h2 {
+    font-size: 36px;
+    line-height: 43.2px;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 22px;
+}
+.clients-tittle p {
+    width: 45%;
+    margin: auto;
+    margin-bottom: 57px;
+    line-height: 30px;
+    color: #606060;
+}
+
+.about-clients{}
+.about-clients p {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 35px;
+    color: #000000d1;
+}
+.about-clients h5 {
+    font-weight: 500;
+    color: rgb(231, 60, 62);
+    font-size: 16px;
+}
+.about-clients h4 {
+    font-size: 16px;
+    color: rgb(96, 96, 96);
+    font-weight: 400;
+}
+
+.clients-img{}
+.clients-img img{
+    max-width: 100%;
+}
+
+/* ----------   END CLIENTS SECTION CSS ---------- */
+
+
+/* ---------- start team section css ---------- */
+.team{
+    padding: 100px 0;
+    background-color: #fafbfc;
+}
+.team-img {
+    position: relative;
+}
+.team-img img{}
+.team-img ul {
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    position: absolute;
+    bottom:0;
+    left: 20%;
+}
+.team-img ul li {
+    list-style: none;
+    display: inline-block;
+   
+
+    
+}
+.team-img ul li a {
+    display: inline-block;
+    color: #111;
+    font-size: 20px;
+
+    margin: 6px 4px;
+    width: 37px;
+    height: 37px;
+    background: #ddd;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 37px;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.team-img ul li:nth-child(1) a{
+    transition-delay: .1;
+}
+
+.team-img ul li:nth-child(2) a{
+    transition-delay: .2s;
+}
+
+.team-img ul li:nth-child(3) a{
+    transition-delay: .3s;
+}
+.team-img ul li:nth-child(4) a{
+    transition-delay: .4s;
+}
+
+
+.team-persons{}
+
+.team-persons h4 {
+    font-size: 20px;
+    color: rgb(231, 60, 62);
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.team-persons h6 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* team hover part */
+
+.team-img:hover a {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-30px);
+    
+} 
+
+.team-img ul li a:hover{
+    color: #fff;
+    background-color: #e73c3e;
+    transition-delay: 0s;
+}
+
+/* ---------- start team section css ---------- */
+
+
+/* ---------- start news  section css ---------- */
+.news{
+    padding: 100px 0;
+}
+.news-photo{
+    
+}
+.news-photo img{
+    
+}
+
+.news-date{}
+.news-date h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(231, 60, 62);
+    margin-top: 21px;
+}
+.news-date h2 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #111;
+    margin-top: 17px;
+    margin-bottom: 20px;
+    line-height: 34px;
+    transition: .5s;
+}
+.news-date a{
+    color: #111;
+    transition: .4s;
+    font-weight: 500;
+}
+
+.news-content:hover .news-date a{
+    color: #e73c3e;
+    letter-spacing: 1.5px;
+}
+.news h2:hover{
+    color: #e73c3e;
+}
+.news-date:hover a{
+    color: #e73c3e;
+    letter-spacing: 1.5px;
+}
+
+/* ---------- end news  section css ---------- */
+
+/* ---------- footer  section css ---------- */
+.main-footer {
+    background: #111;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.footer-top{}
+.footer-content{}
+
+.footer-photo {
+    margin-bottom: 28px;
+}
+.footer-photo img{}
+
+.main-footer p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.footer{}
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+.footer ul li{}
+
+.footer ul li span {
+    margin-right: 23px;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+.footer ul li span a{
+
+
+}
+
+.footer ul li span{}
+
+.footer-items-heading{}
+.footer-items-heading h5 {
+    border-bottom: 1px solid #dddddd4d;
+    padding-bottom: 13px;
+}
+.footer-items-heading ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 30px;
+}
+.footer-items-heading ul li {
+    margin-bottom: 22px;
+}
+.footer-items-heading ul li a {
+    color: #fff;
+}
+
+
+/* ---------- end footer  section css ---------- */
+
+
+
+
+
+
+
+.test{
+    width: 100%;
+    height: 500px;
+}
